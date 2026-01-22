@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carnicería La Plaza",
+    "sector": "Carnicerias",
+    "direccion": "Av. Central 45",
+    "maps_url": "https://maps.google.com/?q=Carniceria+La+Plaza",
+    "telefono": "(243) 987-6543"
+  },
+  {
+    "id": 2,
+    "nombre": "Panadería El Buen Pan",
+    "sector": "Panaderias",
+    "direccion": "Calle Juárez 22",
+    "maps_url": "https://maps.google.com/?q=Panaderia+El+Buen+Pan",
+    "telefono": "(243) 555-1212"
+  },
+  {
+    "id": 3,
+    "nombre": "Abarrotes El Ahorro",
+    "sector": "Abarrotes",
+    "direccion": "Av. Independencia 3",
+    "maps_url": "https://maps.google.com/?q=Abarrotes+El+Ahorro",
+    "telefono": "(243) 999-0000"
+  },
+  {
+    "id": 4,
+    "nombre": "Pastelería Dulce Arte",
+    "sector": "Pastelerias",
+    "direccion": "Plaza Central 5",
+    "maps_url": "https://maps.google.com/?q=Pasteleria+Dulce+Arte",
+    "telefono": "(243) 444-3333"
+  },
+  {
+    "id": 5,
+    "nombre": "Pollería El Pollo Feliz",
+    "sector": "Pollerias",
+    "direccion": "Av. Reforma 101",
+    "maps_url": "https://maps.google.com/?q=Polleria+El+Pollo+Feliz",
+    "telefono": "(243) 222-1111"
+  },
+  {
+    "id": 6,
+    "nombre": "Verdulería La Huerta",
+    "sector": "Verdulerias",
+    "direccion": "Calle Flores 8",
+    "maps_url": "https://maps.google.com/?q=Verduleria+La+Huerta",
+    "telefono": "(243) 777-8888"
+  },
+  {
+    "id": 7,
+    "nombre": "Dulcería La Tradición",
+    "sector": "Dulcerias",
+    "direccion": "Calle Real 12",
+    "maps_url": "https://maps.google.com/?q=Dulceria+La+Tradicion",
+    "telefono": "(243) 666-5555"
+  },
+  {
+    "id": 8,
+    "nombre": "Taquería de Oliver",
+    "sector": "Taquerias",
+    "direccion": "Calle Hidalgo 99",
+    "maps_url": "https://maps.google.com/?q=Taqueria+de+Oliver",
+    "telefono": "(243) 111-2222"
+  },
+
+  
+  {
+    "id": 9,
+    "nombre": "Cafetería Central",
+    "sector": "Cafeteria",
+    "direccion": "Av. Juárez 10",
+    "maps_url": "https://maps.google.com/?q=Cafeteria+Central",
+    "telefono": "(243) 123-4567"
+  },
+  {
+    "id": 10,
+    "nombre": "Cafetería La Esquina",
+    "sector": "Cafeteria",
+    "direccion": "Calle Hidalgo 22",
+    "maps_url": "https://maps.google.com/?q=Cafeteria+La+Esquina",
+    "telefono": "(243) 234-5678"
+  },
+  {
+    "id": 11,
+    "nombre": "Cafetería San Pedro",
+    "sector": "Cafeteria",
+    "direccion": "Plaza Mayor 5",
+    "maps_url": "https://maps.google.com/?q=Cafeteria+San+Pedro",
+    "telefono": "(243) 345-6789"
+  },
+  {
+    "id": 12,
+    "nombre": "Cafetería El Buen Café",
+    "sector": "Cafeteria",
+    "direccion": "Av. Reforma 33",
+    "maps_url": "https://maps.google.com/?q=Cafeteria+El+Buen+Cafe",
+    "telefono": "(243) 456-7890"
+  },
+
+  
+  {
+    "id": 13,
+    "nombre": "Farmacia San José",
+    "sector": "Farmacia",
+    "direccion": "Calle Real 20",
+    "maps_url": "https://maps.google.com/?q=Farmacia+San+Jose",
+    "telefono": "(243) 567-8901"
+  },
+  {
+    "id": 14,
+    "nombre": "Farmacia Central",
+    "sector": "Farmacia",
+    "direccion": "Av. Juárez 55",
+    "maps_url": "https://maps.google.com/?q=Farmacia+Central",
+    "telefono": "(243) 678-9012"
+  },
+  {
+    "id": 15,
+    "nombre": "Farmacia La Salud",
+    "sector": "Farmacia",
+    "direccion": "Calle Hidalgo 77",
+    "maps_url": "https://maps.google.com/?q=Farmacia+La+Salud",
+    "telefono": "(243) 789-0123"
+  },
+  {
+    "id": 16,
+    "nombre": "Farmacia El Ahorro",
+    "sector": "Farmacia",
+    "direccion": "Av. Reforma 88",
+    "maps_url": "https://maps.google.com/?q=Farmacia+El+Ahorro",
+    "telefono": "(243) 890-1234"
+  },
+
+  
+  {
+    "id": 17,
+    "nombre": "Estética Bella",
+    "sector": "Estetica",
+    "direccion": "Calle Flores 15",
+    "maps_url": "https://maps.google.com/?q=Estetica+Bella",
+    "telefono": "(243) 901-2345"
+  },
+  {
+    "id": 18,
+    "nombre": "Estética Glamour",
+    "sector": "Estetica",
+    "direccion": "Av. Central 44",
+    "maps_url": "https://maps.google.com/?q=Estetica+Glamour",
+    "telefono": "(243) 012-3456"
+  },
+  {
+    "id": 19,
+    "nombre": "Estética San Ángel",
+    "sector": "Estetica",
+    "direccion": "Calle Juárez 99",
+    "maps_url": "https://maps.google.com/?q=Estetica+San+Angel",
+    "telefono": "(243) 123-4560"
+  },
+  {
+    "id": 20,
+    "nombre": "Estética La Elegancia",
+    "sector": "Estetica",
+    "direccion": "Av. Reforma 12",
+    "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
+    "telefono": "(243) 234-5670"
+  },
+   {
+    "id": 21,
+    "nombre": "Panaderia de Oliver",
+    "sector": "Panaderias",
+    "direccion": "Av. Reforma 12",
+    "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
+    "telefono": "(243) 234-5670"
+  }
+]
+
