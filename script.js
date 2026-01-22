@@ -8,19 +8,47 @@ async function cargarNegocios() {
     // Buscador
     const inputBuscar = document.getElementById("buscar");
     const btnLimpiar = document.getElementById("limpiar");
+    const btnIr = document.getElementById("btn-ir");
+    const sugerenciasBox = document.getElementById("sugerencias");
 
+    // Autocompletado dinámico
     inputBuscar.addEventListener("input", () => {
-      filtrarNegocios(negocios, inputBuscar.value);
+      const valor = inputBuscar.value.toLowerCase();
+      sugerenciasBox.innerHTML = "";
+
+      if (valor.length > 1) {
+        const coincidencias = negocios.filter(n =>
+          n.nombre.toLowerCase().includes(valor) ||
+          n.sector.toLowerCase().includes(valor)
+        );
+
+        coincidencias.forEach(n => {
+          const item = document.createElement("div");
+          item.textContent = n.nombre;
+          item.classList.add("sugerencia-item");
+          item.onclick = () => {
+            inputBuscar.value = n.nombre;
+            sugerenciasBox.innerHTML = "";
+            filtrarNegocios(negocios, n.nombre);
+            document.getElementById("lista").scrollIntoView({ behavior: "smooth", block: "start" });
+          };
+          sugerenciasBox.appendChild(item);
+        });
+      }
     });
 
+    // Botón Ir → filtra y baja a resultados
+    btnIr.addEventListener("click", () => {
+      filtrarNegocios(negocios, inputBuscar.value);
+      document.getElementById("lista").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    // Botón Limpiar → borra campo y muestra todo
     btnLimpiar.addEventListener("click", () => {
       inputBuscar.value = "";
+      sugerenciasBox.innerHTML = "";
       mostrarNegocios(negocios);
-      // 👇 Scroll hacia resultados
-      document.getElementById("lista").scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      document.getElementById("lista").scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
     // Filtros por sector
@@ -28,23 +56,14 @@ async function cargarNegocios() {
       btn.addEventListener("click", () => {
         const sector = btn.dataset.sector;
         filtrarPorSector(negocios, sector);
-
-        // 👇 Scroll hacia resultados
-        document.getElementById("lista").scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
+        document.getElementById("lista").scrollIntoView({ behavior: "smooth", block: "start" });
       });
     });
 
     // Botón limpiar filtros
     document.getElementById("limpiar-filtros").addEventListener("click", () => {
       mostrarNegocios(negocios);
-      // 👇 Scroll hacia resultados
-      document.getElementById("lista").scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      document.getElementById("lista").scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
   } catch (error) {
@@ -82,23 +101,13 @@ function filtrarNegocios(lista, texto) {
     n.sector.toLowerCase().includes(filtro)
   );
   mostrarNegocios(filtrados);
-
-  // 👇 Scroll hacia resultados
-  document.getElementById("lista").scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
 }
 
 function filtrarPorSector(lista, sector) {
   const filtrados = lista.filter(n => n.sector.toLowerCase() === sector.toLowerCase());
   mostrarNegocios(filtrados);
-
-  // 👇 Scroll hacia resultados
-  document.getElementById("lista").scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
 }
 
 cargarNegocios();
+
+
