@@ -50,6 +50,7 @@ body {
   justify-content: center;
   margin: 1rem auto;
   max-width: 600px;
+  position: relative; /* necesario para posicionar sugerencias */
 }
 .search-wrap .form-control {
   flex: 1;
@@ -66,6 +67,31 @@ body {
   font-weight: 600;
   background-color: var(--color-blanco);
   color: var(--color-cafe);
+}
+
+/* 🔍 Sugerencias dinámicas */
+.sugerencias-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-blanco);
+  border: 1px solid var(--color-dorado);
+  border-radius: 8px;
+  margin-top: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.sugerencia-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--color-cafe);
+}
+.sugerencia-item:hover {
+  background-color: var(--color-beige);
 }
 
 /* Sectores */
@@ -174,14 +200,24 @@ body {
     color: var(--color-blanco);
   }
 
+  /* Sugerencias en móvil */
+  .sugerencias-box {
+    max-height: 150px;
+    font-size: 0.9rem;
+  }
+  .sugerencia-item {
+    padding: 8px 12px;
+  }
+
   /* Sectores y negocios */
   .sector-container {
-    grid-template-columns: 1fr; /* una sola columna en celular */
+    grid-template-columns: 1fr;
   }
   .negocios-container {
-    grid-template-columns: 1fr; /* tarjetas apiladas en celular */
+    grid-template-columns: 1fr;
   }
 }
+
 
 
 
