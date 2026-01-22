@@ -172,6 +172,15 @@
     "direccion": "Av. Reforma 12",
     "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
     "telefono": "(243) 234-5670"
+  },
+  {
+    "id": 22,
+    "nombre": "Elotes",
+    "sector": "Otros",
+    "direccion": "Av. Reforma 12",
+    "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
+    "telefono": "(243) 234-5670"
   }
 ]
+
 
