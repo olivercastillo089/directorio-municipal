@@ -45,16 +45,35 @@ body {
 }
 
 /* Buscador */
+.search-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 600px;
+}
 .search-wrap .form-control {
+  flex: 1;
   border: 1px solid var(--color-dorado);
   border-radius: 8px 0 0 8px;
+  padding: 10px;
+  font-size: 1rem;
 }
 .search-wrap .btn {
   border: 1px solid var(--color-dorado);
   border-radius: 0 8px 8px 0;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background-color: var(--color-blanco);
+  color: var(--color-cafe);
 }
 
 /* Sectores */
+.sector-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
 .sector-card {
   background: #f4f1eb;
   border: 1px solid rgba(201, 168, 106, 0.45);
@@ -63,6 +82,11 @@ body {
 }
 
 /* Tarjetas elegantes de negocios */
+.negocios-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 .negocio-card {
   border: 1px solid var(--color-dorado);
   border-radius: 12px;
@@ -88,7 +112,7 @@ body {
 
 /* Botón elegante para Google Maps */
 .btn-mapa {
-  background: linear-gradient(135deg, #c9a86a, #b38b4d); /* gradiente dorado */
+  background: linear-gradient(135deg, #c9a86a, #b38b4d);
   color: var(--color-blanco);
   border: none;
   padding: 10px 18px;
@@ -101,9 +125,9 @@ body {
   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 .btn-mapa:hover {
-  background: linear-gradient(135deg, #4b2e2e, #3a2323); /* café elegante */
+  background: linear-gradient(135deg, #4b2e2e, #3a2323);
   transform: scale(1.08);
-  box-shadow: 0 0 12px rgba(201,168,106,0.6); /* resplandor dorado */
+  box-shadow: 0 0 12px rgba(201,168,106,0.6);
   text-decoration: none;
 }
 
@@ -116,17 +140,48 @@ body {
 
 /* 📱 Ajustes para móviles */
 @media (max-width: 576px) {
+  /* Navbar y encabezado */
   .navbar-custom .navbar-brand img {
-    max-height: 40px; /* Logo más pequeño */
+    max-height: 40px;
+  }
+  .navbar-custom .navbar-brand span {
+    font-size: 0.95rem;
   }
   .hero-title {
-    font-size: 1.4rem; /* Texto más compacto */
+    font-size: 1.4rem;
   }
   .hero-sub {
     font-size: 1rem;
   }
-  .navbar-custom .navbar-brand span {
-    font-size: 0.95rem; /* Texto institucional más discreto */
+
+  /* Buscador */
+  .search-wrap {
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  .search-wrap .form-control {
+    border-radius: 8px;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  .search-wrap .btn {
+    border-radius: 8px;
+    width: 100%;
+    font-size: 0.95rem;
+    background-color: var(--color-dorado);
+    color: var(--color-blanco);
+  }
+
+  /* Sectores y negocios */
+  .sector-container {
+    grid-template-columns: 1fr; /* una sola columna en celular */
+  }
+  .negocios-container {
+    grid-template-columns: 1fr; /* tarjetas apiladas en celular */
   }
 }
+
+
 
