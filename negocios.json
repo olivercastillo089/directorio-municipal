@@ -168,9 +168,20 @@
     "telefono": "(243) 901-2345",
     "horario": "Martes a domingo: 10:00 - 20:00",
     "descripcion": "Servicios de belleza y cuidado personal."
+  },
+  {
+    "id": 17,
+    "nombre": "Pasteleria",
+    "sector": "Otros",
+    "direccion": "Calle Flores 15",
+    "maps_url": "https://maps.google.com/?q=Estetica+Bella",
+    "telefono": "(243) 901-2345",
+    "horario": "Martes a domingo: 10:00 - 20:00",
+    "descripcion": "Ofrecemos gran variedad de pasteles."
   }
 ]
   
+
 
 
 
