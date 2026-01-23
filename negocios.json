@@ -5,7 +5,9 @@
     "sector": "Carnicerias",
     "direccion": "Av. Central 45",
     "maps_url": "https://maps.google.com/?q=Carniceria+La+Plaza",
-    "telefono": "(243) 987-6543"
+    "telefono": "(243) 987-6543",
+    "horario": "Lunes a sábado: 8:00 - 20:00",
+    "descripcion": "Ofrecemos cortes frescos, servicio a domicilio y promociones especiales los fines de semana."
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "sector": "Panaderias",
     "direccion": "Calle Juárez 22",
     "maps_url": "https://maps.google.com/?q=Panaderia+El+Buen+Pan",
-    "telefono": "(243) 555-1212"
+    "telefono": "(243) 555-1212",
+    "horario": "Todos los días: 7:00 - 22:00",
+    "descripcion": "Pan artesanal, pasteles y repostería fina."
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "sector": "Abarrotes",
     "direccion": "Av. Independencia 3",
     "maps_url": "https://maps.google.com/?q=Abarrotes+El+Ahorro",
-    "telefono": "(243) 999-0000"
+    "telefono": "(243) 999-0000",
+    "horario": "Lunes a domingo: 9:00 - 21:00",
+    "descripcion": "Gran variedad de productos básicos y ofertas especiales."
   },
   {
     "id": 4,
@@ -29,7 +35,9 @@
     "sector": "Pastelerias",
     "direccion": "Plaza Central 5",
     "maps_url": "https://maps.google.com/?q=Pasteleria+Dulce+Arte",
-    "telefono": "(243) 444-3333"
+    "telefono": "(243) 444-3333",
+    "horario": "Martes a domingo: 9:00 - 20:00",
+    "descripcion": "Pasteles personalizados y repostería artesanal."
   },
   {
     "id": 5,
@@ -37,7 +45,9 @@
     "sector": "Pollerias",
     "direccion": "Av. Reforma 101",
     "maps_url": "https://maps.google.com/?q=Polleria+El+Pollo+Feliz",
-    "telefono": "(243) 222-1111"
+    "telefono": "(243) 222-1111",
+    "horario": "Todos los días: 8:00 - 21:00",
+    "descripcion": "Pollos frescos y preparados con recetas tradicionales."
   },
   {
     "id": 6,
@@ -45,7 +55,9 @@
     "sector": "Verdulerias",
     "direccion": "Calle Flores 8",
     "maps_url": "https://maps.google.com/?q=Verduleria+La+Huerta",
-    "telefono": "(243) 777-8888"
+    "telefono": "(243) 777-8888",
+    "horario": "Lunes a sábado: 7:00 - 19:00",
+    "descripcion": "Frutas y verduras frescas de la región."
   },
   {
     "id": 7,
@@ -53,7 +65,9 @@
     "sector": "Dulcerias",
     "direccion": "Calle Real 12",
     "maps_url": "https://maps.google.com/?q=Dulceria+La+Tradicion",
-    "telefono": "(243) 666-5555"
+    "telefono": "(243) 666-5555",
+    "horario": "Lunes a domingo: 10:00 - 20:00",
+    "descripcion": "Dulces típicos y artesanales."
   },
   {
     "id": 8,
@@ -61,17 +75,19 @@
     "sector": "Taquerias",
     "direccion": "Calle Hidalgo 99",
     "maps_url": "https://maps.google.com/?q=Taqueria+de+Oliver",
-    "telefono": "(243) 111-2222"
+    "telefono": "(243) 111-2222",
+    "horario": "Todos los días: 18:00 - 02:00",
+    "descripcion": "Tacos al pastor, suadero y especialidades locales."
   },
-
-  
   {
     "id": 9,
     "nombre": "Cafetería Central",
     "sector": "Cafeteria",
     "direccion": "Av. Juárez 10",
     "maps_url": "https://maps.google.com/?q=Cafeteria+Central",
-    "telefono": "(243) 123-4567"
+    "telefono": "(243) 123-4567",
+    "horario": "Lunes a viernes: 7:00 - 20:00",
+    "descripcion": "Café de especialidad y repostería ligera."
   },
   {
     "id": 10,
@@ -79,7 +95,9 @@
     "sector": "Cafeteria",
     "direccion": "Calle Hidalgo 22",
     "maps_url": "https://maps.google.com/?q=Cafeteria+La+Esquina",
-    "telefono": "(243) 234-5678"
+    "telefono": "(243) 234-5678",
+    "horario": "Todos los días: 8:00 - 22:00",
+    "descripcion": "Ambiente acogedor y café orgánico."
   },
   {
     "id": 11,
@@ -87,7 +105,9 @@
     "sector": "Cafeteria",
     "direccion": "Plaza Mayor 5",
     "maps_url": "https://maps.google.com/?q=Cafeteria+San+Pedro",
-    "telefono": "(243) 345-6789"
+    "telefono": "(243) 345-6789",
+    "horario": "Lunes a sábado: 9:00 - 21:00",
+    "descripcion": "Cafetería tradicional con desayunos completos."
   },
   {
     "id": 12,
@@ -95,17 +115,19 @@
     "sector": "Cafeteria",
     "direccion": "Av. Reforma 33",
     "maps_url": "https://maps.google.com/?q=Cafeteria+El+Buen+Cafe",
-    "telefono": "(243) 456-7890"
+    "telefono": "(243) 456-7890",
+    "horario": "Todos los días: 7:00 - 23:00",
+    "descripcion": "Café gourmet y postres caseros."
   },
-
-  
   {
     "id": 13,
     "nombre": "Farmacia San José",
     "sector": "Farmacia",
     "direccion": "Calle Real 20",
     "maps_url": "https://maps.google.com/?q=Farmacia+San+Jose",
-    "telefono": "(243) 567-8901"
+    "telefono": "(243) 567-8901",
+    "horario": "Lunes a domingo: 8:00 - 22:00",
+    "descripcion": "Medicamentos, productos de salud y asesoría farmacéutica."
   },
   {
     "id": 14,
@@ -113,7 +135,9 @@
     "sector": "Farmacia",
     "direccion": "Av. Juárez 55",
     "maps_url": "https://maps.google.com/?q=Farmacia+Central",
-    "telefono": "(243) 678-9012"
+    "telefono": "(243) 678-9012",
+    "horario": "Todos los días: 9:00 - 21:00",
+    "descripcion": "Farmacia con servicio rápido y surtido completo."
   },
   {
     "id": 15,
@@ -121,7 +145,9 @@
     "sector": "Farmacia",
     "direccion": "Calle Hidalgo 77",
     "maps_url": "https://maps.google.com/?q=Farmacia+La+Salud",
-    "telefono": "(243) 789-0123"
+    "telefono": "(243) 789-0123",
+    "horario": "Lunes a sábado: 8:00 - 20:00",
+    "descripcion": "Medicamentos genéricos y de patente."
   },
   {
     "id": 16,
@@ -129,67 +155,26 @@
     "sector": "Farmacia",
     "direccion": "Av. Reforma 88",
     "maps_url": "https://maps.google.com/?q=Farmacia+El+Ahorro",
-    "telefono": "(243) 890-1234"
+    "telefono": "(243) 890-1234",
+    "horario": "Todos los días: 8:00 - 22:00",
+    "descripcion": "Farmacia con descuentos especiales."
   },
-
-  
   {
     "id": 17,
     "nombre": "Estética Bella",
     "sector": "Estetica",
     "direccion": "Calle Flores 15",
     "maps_url": "https://maps.google.com/?q=Estetica+Bella",
-    "telefono": "(243) 901-2345"
+    "telefono": "(243) 901-2345",
+    "horario": "Martes a domingo: 10:00 - 20:00",
+    "descripcion": "Servicios de belleza y cuidado personal."
   },
   {
     "id": 18,
     "nombre": "Estética Glamour",
     "sector": "Estetica",
     "direccion": "Av. Central 44",
-    "maps_url": "https://maps.google.com/?q=Estetica+Glamour",
-    "telefono": "(243) 012-3456"
-  },
-  {
-    "id": 19,
-    "nombre": "Estética San Ángel",
-    "sector": "Estetica",
-    "direccion": "Calle Juárez 99",
-    "maps_url": "https://maps.google.com/?q=Estetica+San+Angel",
-    "telefono": "(243) 123-4560"
-  },
-  {
-    "id": 20,
-    "nombre": "Estética La Elegancia",
-    "sector": "Estetica",
-    "direccion": "Av. Reforma 12",
-    "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
-    "telefono": "(243) 234-5670"
-  },
-   {
-    "id": 21,
-    "nombre": "Panaderia de Oliver",
-    "sector": "Panaderias",
-    "direccion": "Av. Reforma 12",
-    "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
-    "telefono": "(243) 234-5670"
-  },
-  {
-    "id": 22,
-    "nombre": "Elotes",
-    "sector": "Otros",
-    "direccion": "Av. Reforma 12",
-    "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
-    "telefono": "(243) 234-5670"
-  },
-  {
-    "id": 23,
-    "nombre": "Tamales Don Oliver",
-    "sector": "Otros",
-    "direccion": "Av. Reforma 12",
-    "maps_url": "https://maps.google.com/?q=Estetica+La+Elegancia",
-    "telefono": "(243) 234-5670"
-  }
-]
+    "maps_url": "https://maps.google.com/?
 
 
 
