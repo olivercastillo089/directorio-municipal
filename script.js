@@ -4,8 +4,8 @@ async function cargarNegocios() {
     const negocios = await response.json();
 
     mostrarNegocios(negocios);
+    window.negociosGlobal = negocios; // Guardamos lista global
 
-    // Buscador
     const inputBuscar = document.getElementById("buscar");
     const btnLimpiar = document.getElementById("limpiar");
     const btnIr = document.getElementById("btn-ir");
@@ -75,7 +75,7 @@ function mostrarNegocios(lista) {
   const contenedor = document.getElementById("lista");
   contenedor.innerHTML = "";
 
-  lista.forEach(n => {
+  lista.forEach((n, index) => {
     contenedor.innerHTML += `
       <div class="col-md-4">
         <div class="card negocio-card h-100">
@@ -84,7 +84,10 @@ function mostrarNegocios(lista) {
             <p class="card-text"><strong>Sector:</strong> ${n.sector}</p>
             <p class="card-text"><strong>Dirección:</strong> ${n.direccion}</p>
             <p class="card-text"><strong>Teléfono:</strong> ${n.telefono}</p>
+            <p class="card-text"><strong>Horario:</strong> ${n.horario || "No disponible"}</p>
             <a href="${n.maps_url}" target="_blank" class="btn btn-mapa">Ver en Google Maps</a>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#detalleModal"
+              onclick="mostrarDetalle(${index})">Ver detalles</button>
           </div>
         </div>
       </div>
@@ -92,6 +95,19 @@ function mostrarNegocios(lista) {
   });
 
   document.getElementById("contador").textContent = lista.length;
+}
+
+function mostrarDetalle(index) {
+  const negocio = window.negociosGlobal[index];
+  document.getElementById("detalleTitulo").textContent = negocio.nombre;
+  document.getElementById("detalleContenido").innerHTML = `
+    <p><strong>Sector:</strong> ${negocio.sector}</p>
+    <p><strong>Dirección:</strong> ${negocio.direccion}</p>
+    <p><strong>Teléfono:</strong> ${negocio.telefono}</p>
+    <p><strong>Horario:</strong> ${negocio.horario || "No disponible"}</p>
+    <p>${negocio.descripcion || "Sin descripción adicional."}</p>
+    <p><a href="${negocio.maps_url}" target="_blank" class="btn btn-mapa">Ver en Google Maps</a></p>
+  `;
 }
 
 function filtrarNegocios(lista, texto) {
@@ -109,5 +125,7 @@ function filtrarPorSector(lista, sector) {
 }
 
 cargarNegocios();
+
+
 
 
